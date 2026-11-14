@@ -1,22 +1,34 @@
-﻿//データ型
-//変数に入るデータの種類のこと。
-//（→Numberなどの数字、文字列、booleanとか？）
+﻿//演算子
+//GOAL:演算子を利用できる
+// + - * / % **(べき乗)
 'use strict';
-let myName = 'Ichiro';
-let num = 123;//数値型
-let dec = 123.456;//数値型。JSでは整数、小数点を区別せずに、数値型とする
+let ans = 1 + 2;
+console.log(ans);
 
-console.log(myName);
-console.log(num);
-console.log(dec);
+let i = 20;
+let j = 10;
+let ans1 = i + j;
+console.log(ans1);
 
-console.log(typeof myName);
-console.log(typeof num);
-console.log(typeof dec);
+let ans2 = i - j;
+console.log(ans2);
 
-myName = 456;//変数に、動的に方の違う値を代入できる
-console.log(myName);
-console.log(typeof myName);
+let ans3 = i * j;
+console.log(ans3);
 
-// 動的型付け言語
-// 静的型付け言語 Javaなど
+let ans4 = i / j;
+console.log(ans4);
+
+let x = 3;
+let y = 2;
+let ans5 = x / y; 
+console.log(ans5);
+
+let ans6 = x % y; //余り
+console.log(ans6);
+
+let ans7 = Math.pow(x, y); //べき乗
+console.log(ans7);
+
+let ans8 = x ** y; //べき乗の演算子（バージョンによる
+console.log(ans8);
