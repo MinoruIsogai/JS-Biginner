@@ -98,3 +98,41 @@ let weight = 60;
 let height = 1.7;
 let aBmi = weight / (height * height);
 console.log(aBmi);
+
+
+
+
+// この処理のせいで、バグが起こるような運用はしないこと。そのために処理が複雑であると覚えておくこと。
+// インクリメントとデクリメント
+// GOAL：インクリメントとデクリメントが使える。前置演算子と後置演算子で違いが発生するケースについて知る。
+// インクリメントとは
+// 数値の値を1増加させること
+// デクリメントとは
+// 数値の値を1減少されること
+
+'use strict';
+// let number = 10;
+
+// //インクリメント（後置演算子
+// number++;
+// console.log(number);
+
+// //デクリメント（後置演算子
+// number--;
+// console.log(number);
+
+// //前置演算子のインクリメント
+// ++number;
+// console.log(number);
+
+// //前置演算子のデクリメント
+// --number;
+// console.log(number);
+
+let number1 = 10;
+let number2 = 10;
+let answer1 = ++number1;// インクリメント→代入
+let answer2 = number2++;// 代入→インクリメント
+console.log(answer1);//11
+console.log(answer2);//10
+
