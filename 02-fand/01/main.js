@@ -1,34 +1,18 @@
 ﻿//演算子
-//GOAL:演算子を利用できる
-// + - * / % **(べき乗)
+//GOAL:演算子の優先順位を理解する。バグを防ぐ方法について、理解する。
 'use strict';
-let ans = 1 + 2;
-console.log(ans);
+let x = 1;
+let y = 2;
+let z = 3;
+let ans1 = x + y * z;//答えはいくらか
+console.log(ans1);//ans1 = 7
 
-let i = 20;
-let j = 10;
-let ans1 = i + j;
-console.log(ans1);
-
-let ans2 = i - j;
+let ans2 = (x + y) * z;
 console.log(ans2);
 
-let ans3 = i * j;
-console.log(ans3);
+// 優先順位
+// ()
+// * /
+// + -
 
-let ans4 = i / j;
-console.log(ans4);
-
-let x = 3;
-let y = 2;
-let ans5 = x / y; 
-console.log(ans5);
-
-let ans6 = x % y; //余り
-console.log(ans6);
-
-let ans7 = Math.pow(x, y); //べき乗
-console.log(ans7);
-
-let ans8 = x ** y; //べき乗の演算子（バージョンによる
-console.log(ans8);
+//MDNの一覧表でも確認できる。
